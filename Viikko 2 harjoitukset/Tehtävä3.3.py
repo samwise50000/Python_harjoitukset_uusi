@@ -8,18 +8,24 @@ gender = input("Sukupuolesi (nainen/mies)? ")
 hg_value = int(input("Hemoglobiinisi (g/l)? "))
 
 if gender == "nainen":
+    # testataan arvojen "järkevyys"
+    if not (1 < hg_value < 300):
+        print("Virheellinen hg-arvo!")
     # testataan naisen ohjearvot
-    if hg_value < 117:
+    elif hg_value < 117:
         print("Hemoglobiinin arvo on alhainen.")
     elif hg_value <= 175:
         print("Hemoglobiinin arvo on normaali.")
     else:
         print("Hemoglobiinin arvo on liian korkea.")
 elif gender =="mies":
+    # testataan arvojen "järkevyys"
+    if not (1 < hg_value < 300):
+        print("Virheellinen hg-arvo!")
     # miehen arvot
-    if hg_value < 134:
+    elif hg_value < 134:
         print("Hemoglobiinin arvo on alhainen.")
     elif hg_value <= 195:
-        print("Hemoglobiinin arvo on normaali")
+        print("Hemoglobiinin arvo on normaali.")
     else:
         print("Hemoglobiinin arvo on liian korkea.")
