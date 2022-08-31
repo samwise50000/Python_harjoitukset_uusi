@@ -2,11 +2,7 @@
 # kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
-# Write a program, that asks the user numbers up to the point,
-# until the user inputs an empty string as the ending mark.
-# After the program ends, the program will output the lowest and highest number that was given.
-
-userInput = input('Enter a number, or enter a blank string to stop: ')
+userInput = input('Anna luku. Ohjelma loppuu, kun annat tyhjän merkkijonon: ')
 lowestNumber = 0
 highestNumber = 0
 index = 0
@@ -29,7 +25,7 @@ while userInput != "":
 
     index += 1
 
-    userInput = input('Enter a number, or enter a blank string to stop: ')
+    userInput = input('Anna luku. Ohjelma loppuu, kun annat tyhjän merkkijonon: ')
 
-print('Lowest number: ' + str(lowestNumber))
-print('Highest number: ' + str(highestNumber))
+print('Pienin syötetty luku ' + str(lowestNumber))
+print('Suurin syötetty luku: ' + str(highestNumber))
