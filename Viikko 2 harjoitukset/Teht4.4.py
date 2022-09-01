@@ -22,7 +22,7 @@ while userInput != rNumber:
     elif rNumber > userInput:
             print("Liian pieni arvaus")
     else:
-                print("Oikein.")
+        print("Oikein.")
 
 
 
