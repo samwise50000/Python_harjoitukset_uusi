@@ -9,23 +9,16 @@
 # Attention! The computer can't switch the integer between the draws.
 import random
 
+randomNumber = random.randint(1, 10)
 userInput = int(input('Ohjelma on arvonnut luvun välillä 1-10. Yritä arvata oikea luku: '))
-rNumber = random.randint(1, 10)
 
-while userInput != rNumber:
-    userInput = int(input('Uusi yritys: '))
-    if rNumber < userInput:
-        print("Liian suuri arvaus")
-        if rNumber == userInput:
-            ("Oikein.")
+while userInput != randomNumber:
+    if userInput < randomNumber:
+        print("Liian pieni arvaus")
 
-    elif rNumber > userInput:
-            print("Liian pieni arvaus")
     else:
-        print("Oikein.")
+        print("Liian suuri arvaus")
 
+    userInput = int(input('Ohjelma on arvonnut luvun välillä 1-10. Yritä arvata oikea luku: '))
 
-
-
-
-
+print('Oikein.')
