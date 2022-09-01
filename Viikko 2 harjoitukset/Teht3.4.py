@@ -14,3 +14,4 @@ if year % 4 == 0:
         print('Vuosiluku on karkausvuosi.')
 else:
     print('Vuosiluku ei ole karkausvuosi.')
+

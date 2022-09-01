@@ -27,5 +27,5 @@ while userInput != "":
 
     userInput = input('Anna luku. Ohjelma loppuu, kun annat tyhjän merkkijonon: ')
 
-print('Pienin syötetty luku ' + str(lowestNumber))
+print('Pienin syötetty luku: ' + str(lowestNumber))
 print('Suurin syötetty luku: ' + str(highestNumber))
