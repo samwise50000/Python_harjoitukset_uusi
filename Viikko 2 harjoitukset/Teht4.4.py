@@ -3,10 +3,6 @@
 # Kunkin arvauksen jälkeen ohjelma tulostaa tekstin Liian suuri arvaus, Liian pieni arvaus tai Oikein.
 # Huomaa, että tietokone ei saa vaihtaa lukuaan arvauskertojen välissä.
 
-# Write a game, where computer draws an integer between 1..10.
-# The computer tries to guess the integer as long as it guesses it right.
-# After each guess, the program will print out text "Too high guess", "Too low guess", or "Correct."
-# Attention! The computer can't switch the integer between the draws.
 import random
 
 randomNumber = random.randint(1, 10)
