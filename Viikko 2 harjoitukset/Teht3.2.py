@@ -9,13 +9,13 @@
 
 cabinClass = input("Anna laivan hyttiluokka. Kelvolliset hyttiluokat ovat: LUX, A, B, C: ")
 
-if cabinClass == 'LUX':
+if cabinClass == 'lux':
     print('LUX on parvekkeellinen hytti yläkannella.')
-elif cabinClass == 'A':
+elif cabinClass == 'a':
     print('A on ikkunallinen hytti autokannen yläpuolella.')
-elif cabinClass == 'B':
+elif cabinClass == 'b':
     print('B on ikkunaton hytti autokannen yläpuolella.')
-elif cabinClass == 'C':
+elif cabinClass == 'c':
     print('C on ikkunaton hytti autokannen alapuolella.')
 else:
     print('Virheellinen hyttiluokka.')
