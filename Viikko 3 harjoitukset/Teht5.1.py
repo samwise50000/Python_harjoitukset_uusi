@@ -2,11 +2,10 @@
 #Ohjelma heittää kerran kaikkia arpakuutioita ja tulostaa silmälukujen summan. Käytä for-toistorakennetta.
 from random import randint
 
-nop_yht = []
-
 nopat = int(input("Montako noppaa heitetään?: "))
-
+nop_yht = 0
 for nopat in range(nopat):
+    x = randint(1, 6)
+    nop_yht += x
 
-
-print("Noppien summa on:", )
+print(f"Noppien silmälukujen summa on: {nop_yht}")
