@@ -11,7 +11,6 @@ print(num_list)
 
 num_list = (delete_odd(num_list))
 
-
 print(delete_odd(num_list))
 
 
