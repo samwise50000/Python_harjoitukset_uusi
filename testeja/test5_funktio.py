@@ -7,8 +7,11 @@ def delete_odd(num_list):
 
 num_list = [0, 3, 4, 6, 7, 13, 16, 19, 21, 23]
 
-
 print(num_list)
-num_list = num_list(delete_odd(num_list))
+
+num_list = (delete_odd(num_list))
+
+
+print(delete_odd(num_list))
 
 

@@ -15,7 +15,7 @@ def sumOfNumbers(listOfNumbers):
     return sum
 
 
-listOfNumbers = [0, 5, 3, 2, 7]
+listOfNumbers = [0, 5, 3, 2, 7, 11]
 
 sum = sumOfNumbers(listOfNumbers)
 

@@ -8,14 +8,14 @@
 
 
 
-def convertToGallons(liters):
-    gallons = liters * 0.264172
-    print(gallons)
+def convertToLiters(liters):
+    result = gallons * 3.785
+    return result
 
-liters = float(input('Anna bensiinin määrä. Ohjelma muuuttaa Yhdysvaltain nestegallonit litroiksi ja tulostaa sen. Ohjelma loppuu, kun annat negatiivisen lukeman: '))
+gallons = float(input('Ohjelma muuttaa antamasi lukeman Yhdysvaltain nestegalloneista litroiksi. Ohjelma lopettaa muuntelun, kun annat negatiivisen lukeman. Anna jokin lukema: '))
 
-while liters >= 0:
-    convertToGallons(liters)
-
-    liters = float(input('Anna bensiinin määrä. Ohjelma muuuttaa Yhdysvaltain nestegallonit litroiksi ja tulostaa sen. Ohjelma loppuu, kun annat negatiivisen lukeman: '))
+while gallons >= 0:
+    liters = convertToLiters(gallons)
+    print(f"{liters:.2f} litraa.")
+    gallons = float(input('Ohjelma muuttaa antamasi lukeman Yhdysvaltain nestegalloneista litroiksi. Ohjelma lopettaa muuntelun, kun annat negatiivisen lukeman. Anna jokin lukema: '))
 

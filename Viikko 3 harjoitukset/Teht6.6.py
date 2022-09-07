@@ -26,19 +26,18 @@ def calculatePizzaValuePerSquareMeter2(diameterInCm, priceInEuros):
 
 def calculateBestValueForMoneyPizza(pizza1PricePerSquareMetre, pizza2PricePerSquareMetre):
     if pizza1PricePerSquareMetre < pizza2PricePerSquareMetre:
-        return print(f"Pizza 1 on halvempi, pizzan hinta on {pizza1PricePerSquareMetre:.2f} per neliömetri.")
+        return print(f"Pizza 1 on halvempi, pizzan hinta on {pizza1PricePerSquareMetre:.2f}€ per neliömetri.")
     else:
-        return print(f"Pizza 2 on halvempi, pizzan hinta on {pizza2PricePerSquareMetre:.2f} per neliömetri.")
+        return print(f"Pizza 2 on halvempi, pizzan hinta on {pizza2PricePerSquareMetre:.2f}€ per neliömetri.")
 
-pizzaDiameterInCm1 = float(input('Input the diameter for pizza 1 in cm: '))
-pizzaPriceInEuros1 = float(input('Input the price for pizza 1 in euros: '))
+pizzaDiameterInCm1 = float(input('Anna ensimmäisen pizzan halkaisija senttimetreinä: '))
+pizzaPriceInEuros1 = float(input('Anna ensimmäisen pizzan hinta euroina: '))
 
-pizzaDiameterInCm2 = float(input('Input the diameter for pizza 2 in cm: '))
-pizzaPriceInEuros2 = float(input('Input the price for pizza 2 in euros: '))
+pizzaDiameterInCm2 = float(input('Anna toisen pizzan halkaisija senttimetreinä: '))
+pizzaPriceInEuros2 = float(input('Anna toisen pizzan hinta euroina: '))
 
 pizza1PricePerSquareMetre = calculatePizzaValuePerSquareMeter1(pizzaDiameterInCm1, pizzaPriceInEuros1)
 pizza2PricePerSquareMetre = calculatePizzaValuePerSquareMeter2(pizzaDiameterInCm2, pizzaPriceInEuros2)
 
 bestValueForMoneyPizza = calculateBestValueForMoneyPizza(pizza1PricePerSquareMetre, pizza2PricePerSquareMetre)
-#print(bestValueForMoneyPizza)
 
