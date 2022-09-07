@@ -1,9 +1,9 @@
 def laskeKolmionAla(kanta, korkeus):
     A = (kanta * korkeus) / 2
-    print(f"Kolmion ala on {A:.2f}")
-    return
+    return A
 
 ka = float(input("Anna kolmion kanta: "))
 ko = float(input("Anna kolmion korkeus: "))
 laskeKolmionAla(ka, ko)
-print(f"Pääohjelmassa kanta = {ka} ja korkeus = {ko}")
+pintaAla = laskeKolmionAla(ka, ko)
+print(f"Kolmion ala on {pintaAla:.2f}")

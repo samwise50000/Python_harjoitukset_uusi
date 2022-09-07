@@ -1,13 +1,21 @@
-from random import randint
+import random
 
-def noppa():
-    noppaluku = 0
-    while noppaluku != 6:
-        noppaluku = randint(1, 6)
-        print(noppaluku)
+#def noppa():
+#    noppaluku = 0
+#    while noppaluku != 6:
+#        noppaluku = random.randint(1, 6)
+#        print(noppaluku)
 
-noppa()
+#noppa()
 
+def throwDice():
+    diceNumber = random.randint(1, 6)
+    return diceNumber
 
+while True:
+    numberDice = throwDice()
+    print(numberDice)
+    if numberDice == 6:
+        break
 
 
