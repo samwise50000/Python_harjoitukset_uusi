@@ -7,15 +7,16 @@
 # Write a main program, where you create a list. Call out the function and then print out in the main program the first original list and then the list that has odd numbers removed.
 
 def removeOddNumbers(listOfNumbers):
+    list = []
+
     for number in listOfNumbers:
-        if number%2 != 0:
-            listOfNumbers.remove(number)
-    return listOfNumbers
+        if (number%2 == 0):
+            list.append(number)
+    return list
 
+listOfNumbers = [0, 3, 4, 6, 7, 13, 16, 19, 21, 23]
 
-listOfNumbers = [0, 3, 4, 6, 7]
-
-print(listOfNumbers)
 listOfEvenNumbers = removeOddNumbers(listOfNumbers)
 
-print(listOfEvenNumbers)
+print(listOfNumbers)
+print(removeOddNumbers(listOfNumbers))
