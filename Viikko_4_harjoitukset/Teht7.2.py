@@ -15,6 +15,7 @@ while nimi != "":
         nimet.add(nimi)
         if nimi == "":
             break
+    print(nimi)
     nimi = input("Anna uusi nimi: ")
 for x in nimet:
     print(x)
