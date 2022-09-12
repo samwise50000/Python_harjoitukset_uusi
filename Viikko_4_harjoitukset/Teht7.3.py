@@ -8,16 +8,16 @@
 lentoasemat = {}
 
 def lentoasema():
-    koodinlisäys=input("ICAO Koodi")
-    nimenlisäys=input("Lentoaseman nimi")
+    koodinlisäys=input("ICAO koodi: ")
+    nimenlisäys=input("Lentoaseman nimi: ")
     lentoasemat[koodinlisäys] = nimenlisäys
 
 def kerroasema():
-    kysyntä = input("Anna koodi: ")
+    kysyntä = input("Anna ICAO koodi: ")
     if kysyntä in lentoasemat:
         print(f"Lentoasema on {lentoasemat[kysyntä]}.")
     else:
-        print("Ei ole lentoasemaa")
+        print("Ei ole lentoasemaa.")
 
 
 ensimmäinen = 1
@@ -26,7 +26,7 @@ toinen = 2
 print("2 - haku")
 nolla = 0
 print("0 - lopetus")
-valinta = int(input("valitse"))
+valinta = int(input("Valitse 1, 2 tai 0: "))
 while valinta != nolla:
     if valinta == ensimmäinen:
         lentoasema()
@@ -34,4 +34,4 @@ while valinta != nolla:
         kerroasema()
         if valinta == nolla:
             break
-    valinta = int(input("valitse"))
+    valinta = int(input("Valitse 1, 2 tai 0: "))
