@@ -1,1 +1,1 @@
-# Python_harjoitukset_uusi
+# Paljon erilaisia Python koodi- kieli harjoituksia.
